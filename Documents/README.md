@@ -14,13 +14,3 @@ I'm building a Python script that watches a folder and sorts files automatically
 - FileNotFoundError (folder doesn't exist) → check what's actually there
 
 **Status:** ✅ Day 1 complete
-
-## Day 2 - Moving Files
-
-**What I learned:**
-- `shutil.move()` moves files
-- File extensions tell you file types
-- `os.listdir()` finds all files
-- Created a "skip list" to protect important files
-
-**Status:** ✅ Day 2 complete
