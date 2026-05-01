@@ -30,7 +30,6 @@ Over 5 days, I built a script that watches a folder and sorts files automaticall
 
 ## How to Use It
 
-```bash
 # Sort by file type
 python organiser.py --folder ~/Downloads --sort type
 
