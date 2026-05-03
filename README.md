@@ -1,5 +1,20 @@
 # Automated File Organiser
 
+## Project Summary
+
+After 5 days of learning, here's what I built: A Python script that watches any folder and automatically sorts files by type, date, or size. It runs in the background and can be controlled from the command line.
+
+**What I learned:**
+- Day 1: Python setup, creating/deleting folders
+- Day 2: Moving files by extension
+- Day 3: Sorting by date and size
+- Day 4: Real-time folder watching with watchdog
+- Day 5: Command-line arguments and background running
+
+**The biggest lesson:** I started with zero coding experience. Now I have a working tool. Errors aren't failures - they're just the computer telling you what's wrong.
+
+# Automated File Organiser
+
 I built this because my Downloads folder was a mess. This Python script watches any folder and automatically sorts files into organized subfolders by type, date, or size.
 
 ## The Problem
@@ -136,3 +151,61 @@ A background script that watches my folder and automatically sorts new files by 
 | Git & GitHub | Version control |
 
 ---
+
+## Day 5 - Command-Line Arguments & Background Running
+
+**What I learned:**
+- `argparse` reads command-line arguments (what you type after `python3 script.py`)
+- `sys.argv` captures everything typed in the terminal
+- `nohup` keeps scripts running after terminal closes
+- `&` runs a process in the background
+- `kill` stops a background process
+
+**What I built:**
+A final script that accepts:
+- `--folder` - which folder to watch (defaults to current folder)
+- `--sort` - sorting method: type, date, or size (defaults to type)
+
+**How to use it:**
+
+```bash
+# Watch current folder, sort by type
+python3 organiser.py
+
+# Watch Downloads folder, sort by type
+python3 organiser.py --folder ~/Downloads --sort type
+
+# Watch Downloads folder, sort by date
+python3 organiser.py --folder ~/Downloads --sort date
+
+# Watch Downloads folder, sort by size
+python3 organiser.py --folder ~/Downloads --sort size
+
+# Get help menu
+python3 organiser.py --help
+
+# Run in background (keeps running after terminal closes)
+nohup python3 organiser.py --folder ~/Downloads --sort type &
+
+# Check if it's running
+ps aux | grep organiser
+
+# Stop the background process
+kill [PID_NUMBER]
+
+---
+
+## Project Summary
+
+After 5 days of learning, here's what I built: A Python script that watches any folder and automatically sorts files by type, date, or size.
+
+**What I learned:**
+- Day 1: Python setup, creating/deleting folders
+- Day 2: Moving files by extension
+- Day 3: Sorting by date and size
+- Day 4: Real-time folder watching with watchdog
+- Day 5: Command-line arguments and background running
+
+**The biggest lesson:** I started with zero coding experience. Errors aren't failures - they're just the computer telling you what's wrong.
+
+Built by Daniel - from zero to working code in 5 days.
