@@ -192,6 +192,7 @@ ps aux | grep organiser
 
 # Stop the background process
 kill [PID_NUMBER]
+```
 
 ---
 
@@ -208,4 +209,29 @@ After 5 days of learning, here's what I built: A Python script that watches any 
 
 **The biggest lesson:** I started with zero coding experience. Errors aren't failures - they're just the computer telling you what's wrong.
 
-Built by Daniel - from zero to working code in 5 days.
+---
+
+## Project Complete
+
+**Features implemented:**
+
+- Sorting by file type (Images, PDFs, Documents)
+- Sorting by date (folders by year-month-day)
+- Sorting by size (Small, Medium, Large)
+- Real-time folder watching
+- Command-line arguments
+- Background running
+
+**Key takeaways:**
+
+- Python can interact with the file system
+- Error messages provide useful guidance
+- Complex problems can be solved by breaking them into smaller pieces
+
+The Downloads folder now stays organized automatically.
+
+Built by Daniel.
+
+---
+
+Thank you for visiting this project.
